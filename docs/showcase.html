@@ -1,0 +1,24 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>Beyond Frame — Renderer showcase</title>
+<link rel="stylesheet" href="../content.css">
+<style>
+*{box-sizing:border-box}body{margin:0;background:#101216;color:#fff;font:16px system-ui,-apple-system,sans-serif}ytd-app{display:block;min-height:100vh}header{position:fixed;top:0;left:0;right:0;padding:30px 42px;display:flex;align-items:center;justify-content:space-between;z-index:5;background:linear-gradient(#0008,transparent)}.brand{font-size:25px;font-weight:650;letter-spacing:-1px}.tag{font-size:12px;letter-spacing:2px;opacity:.85}#movie_player{position:absolute;width:66vw;height:calc(66vw * 9 / 16);left:17vw;top:50%;transform:translateY(-50%)}video{display:block;width:100%;height:100%;object-fit:contain}footer{position:fixed;bottom:0;left:0;right:0;padding:50px 42px 30px;background:linear-gradient(transparent,#000b);z-index:5;display:flex;justify-content:space-between;align-items:end}h1{font-size:32px;letter-spacing:-1px;margin:0 0 8px}p{margin:0;font-size:14px;opacity:.9}.credit{text-align:right;font-size:11px;line-height:1.7;max-width:400px}.controls{position:fixed;top:95px;left:42px;z-index:10;display:flex;gap:6px}button{background:#111a;color:white;border:1px solid #fff5;border-radius:20px;padding:8px 12px;cursor:pointer}.capture .controls{display:none}.capture header,.capture footer{text-shadow:0 1px 8px #0008}#status{position:fixed;top:145px;left:42px;z-index:10;font-size:12px}.capture #status{display:none}
+</style>
+<ytd-app><header><div class="brand">beyond-frame</div><div class="tag">LOCAL GPU · NO AI</div></header><nav class="controls"><button id="bbb">Big Buck Bunny</button><button id="sintel">Sintel</button><button id="tos">Tears of Steel</button><button id="toggle">Background on / off</button><button id="capture">Capture view</button></nav><div id="status">Choose a film</div><div id="movie_player"><video crossorigin="anonymous" muted playsinline preload="metadata"></video></div><footer><div><h1 id="film">Color beyond the frame.</h1><p>One reflection. A softer horizon.</p></div><div class="credit"><div id="credit"></div><div>Local demo · extension renderer, not a YouTube screenshot</div></div></footer></ytd-app>
+<script>
+let storageListener;let currentSettings={enabled:true,blur:65,brightness:75,quality:'balanced'};
+window.chrome={storage:{local:{get:async()=>({settings:currentSettings})},onChanged:{addListener:fn=>storageListener=fn}},runtime:{onMessage:{addListener:()=>{}}}};
+window.promoErrors=[];addEventListener('error',e=>promoErrors.push(e.message));addEventListener('unhandledrejection',e=>promoErrors.push(String(e.reason)));
+</script><script src="../core.js"></script><script src="../i18n.js"></script><script src="../renderer.js"></script><script src="../content.js"></script>
+<script>
+const video=document.querySelector('video');
+const films={bbb:{title:'Big Buck Bunny',path:'big_buck_bunny',time:65,credit:'© 2008 Blender Foundation · peach.blender.org · CC BY 3.0'},sintel:{title:'Sintel',path:'sintel',time:90,credit:'© 2010 Blender Foundation · durian.blender.org · CC BY 3.0'},tos:{title:'Tears of Steel',path:'tears_of_steel',time:110,credit:'© 2012 Blender Foundation · mango.blender.org · CC BY 3.0'}};
+let selected;
+for(const [key,film] of Object.entries(films))document.querySelector('#'+key).onclick=()=>{selected=film;document.body.classList.remove('capture');document.querySelector('#film').textContent=film.title;document.querySelector('#credit').textContent=film.credit;document.querySelector('#status').textContent='Loading '+film.title;video.src=`https://storage.googleapis.com/cpe-sample-media/content/${film.path}/prog/${film.path}_prog.mp4`;video.load()};
+video.addEventListener('loadedmetadata',()=>video.currentTime=selected.time);
+video.addEventListener('seeked',async()=>{try{await video.play();requestAnimationFrame(()=>{video.pause();document.querySelector('#status').textContent='Ready · '+video.videoWidth+' × '+video.videoHeight;document.body.dataset.ready='true'})}catch(e){document.querySelector('#status').textContent=String(e)}});
+video.addEventListener('error',()=>document.querySelector('#status').textContent='Video error '+video.error?.code);
+document.querySelector('#capture').onclick=()=>document.body.classList.add('capture');
+addEventListener('keydown',event=>{if(event.key==='Escape')document.body.classList.remove('capture')});
+document.querySelector('#toggle').onclick=()=>{currentSettings={...currentSettings,enabled:!currentSettings.enabled};storageListener?.({settings:{newValue:currentSettings}},'local')};
+</script></html>
+

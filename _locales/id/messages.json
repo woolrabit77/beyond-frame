@@ -1,0 +1,137 @@
+{
+  "appName": {
+    "message": "Beyond Frame"
+  },
+  "appDescription": {
+    "message": "Perluas tepi video YouTube ke seluruh layar. GPU lokal, latar hingga 30fps."
+  },
+  "title": {
+    "message": "Beyond Frame"
+  },
+  "subtitle": {
+    "message": "Warna dan gerak memenuhi layar."
+  },
+  "enabled": {
+    "message": "Perluas latar"
+  },
+  "blur": {
+    "message": "Buram luar"
+  },
+  "brightness": {
+    "message": "Kecerahan luar"
+  },
+  "quality": {
+    "message": "Kualitas"
+  },
+  "low": {
+    "message": "Ringan · 960px"
+  },
+  "balanced": {
+    "message": "Seimbang · 1280px"
+  },
+  "high": {
+    "message": "Tajam · 1600px"
+  },
+  "playbackNote": {
+    "message": "Video asli tetap diputar. Latar diperbarui hingga 30fps."
+  },
+  "frameNote": {
+    "message": "Bingkai video diproses di perangkat dan tidak dikirim ke luar."
+  },
+  "privacyLink": {
+    "message": "Privasi"
+  },
+  "checking": {
+    "message": "Memeriksa status video…"
+  },
+  "disabled": {
+    "message": "Perluasan latar dimatikan."
+  },
+  "waiting": {
+    "message": "Menunggu video YouTube."
+  },
+  "paused": {
+    "message": "Dijeda · Latar juga dijeda."
+  },
+  "playing": {
+    "message": "Latar GPU · $DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "measuring": {
+    "message": "Mengukur…"
+  },
+  "unavailable": {
+    "message": "Buka video YouTube. Muat ulang tab yang sudah terbuka."
+  },
+  "errorGpu": {
+    "message": "Pemrosesan latar GPU tidak tersedia di browser ini."
+  },
+  "errorInit": {
+    "message": "Inisialisasi GPU gagal: $DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "errorLink": {
+    "message": "Program GPU gagal: $DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "errorBuffer": {
+    "message": "Buffer latar GPU tidak dapat dibuat."
+  },
+  "errorLost": {
+    "message": "Koneksi GPU terputus. Matikan lalu nyalakan kembali ekstensi."
+  },
+  "errorSize": {
+    "message": "Resolusi video melebihi batas GPU."
+  },
+  "errorFullscreen": {
+    "message": "Gunakan tombol layar penuh YouTube untuk menampilkan latar."
+  },
+  "errorSecurity": {
+    "message": "Keamanan browser mencegah pemrosesan video ini."
+  },
+  "privacyTitle": {
+    "message": "Kebijakan privasi"
+  },
+  "privacyIntro": {
+    "message": "Bingkai video diproses secara lokal untuk memperluas latar. Bingkai dan pengaturan tidak dijual, dibagikan, atau dikirim ke pengembang, pihak ketiga, atau layanan AI. Tidak ada server eksternal atau kode jarak jauh."
+  },
+  "privacyDataTitle": {
+    "message": "Data dan tujuan"
+  },
+  "privacyData": {
+    "message": "Bingkai, resolusi, status pemutaran, posisi dan ukuran digunakan sementara untuk merender. Bingkai berada di memori, seperti tekstur GPU, dan tidak disimpan sebagai berkas video. Aktif, buram, kecerahan dan kualitas disimpan di penyimpanan lokal profil Chrome."
+  },
+  "privacyAccessTitle": {
+    "message": "Akses"
+  },
+  "privacyAccess": {
+    "message": "Hanya berjalan di www.youtube.com dan m.youtube.com. Panel meminta status dari tab aktif. Tidak menyimpan atau mengirim daftar URL atau riwayat. Tidak meminta nama, email, kata sandi, cookie, pembayaran, lokasi atau pesan pribadi. Tanpa pelacakan iklan atau analitik. Pemrosesan YouTube sendiri mengikuti kebijakannya."
+  },
+  "privacyRetentionTitle": {
+    "message": "Penyimpanan dan penghapusan"
+  },
+  "privacyRetention": {
+    "message": "Bingkai dan status hanya digunakan saat berjalan. Mematikan latar atau mengganti video melepaskan sumber daya. Pengaturan tetap lokal hingga diubah atau ekstensi dihapus, tanpa sinkronisasi akun Chrome."
+  },
+  "privacyChoiceTitle": {
+    "message": "Pilihan Anda"
+  },
+  "privacyChoice": {
+    "message": "Mematikan fitur menghentikan unggahan bingkai. Jeda atau tab tersembunyi menghentikan pembaruan. Ekstensi dapat dinonaktifkan atau dihapus di Chrome. Data hanya dipakai untuk latar dan pengaturan sesuai persyaratan Penggunaan Terbatas Chrome Web Store. Pemberitahuan diperbarui jika pemrosesan berubah. Hubungi pemberi ekstensi untuk pertanyaan."
+  },
+  "privacyDate": {
+    "message": "Berlaku: 12 Oktober 2026"
+  }
+}

@@ -1,0 +1,137 @@
+{
+  "appName": {
+    "message": "Beyond Frame"
+  },
+  "appDescription": {
+    "message": "Estenda as bordas do YouTube pela tela. GPU local, fundo em até 30fps."
+  },
+  "title": {
+    "message": "Beyond Frame"
+  },
+  "subtitle": {
+    "message": "Cor e movimento na tela inteira."
+  },
+  "enabled": {
+    "message": "Expandir fundo"
+  },
+  "blur": {
+    "message": "Desfoque externo"
+  },
+  "brightness": {
+    "message": "Brilho externo"
+  },
+  "quality": {
+    "message": "Qualidade"
+  },
+  "low": {
+    "message": "Leve · 960px"
+  },
+  "balanced": {
+    "message": "Equilibrada · 1280px"
+  },
+  "high": {
+    "message": "Nítida · 1600px"
+  },
+  "playbackNote": {
+    "message": "O vídeo original não muda. O fundo é atualizado em até 30fps."
+  },
+  "frameNote": {
+    "message": "Os quadros são processados no dispositivo e nunca enviados para fora."
+  },
+  "privacyLink": {
+    "message": "Privacidade"
+  },
+  "checking": {
+    "message": "Verificando o vídeo…"
+  },
+  "disabled": {
+    "message": "A expansão do fundo está desativada."
+  },
+  "waiting": {
+    "message": "Aguardando um vídeo do YouTube."
+  },
+  "paused": {
+    "message": "Pausado · O fundo também."
+  },
+  "playing": {
+    "message": "Fundo na GPU · $DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "measuring": {
+    "message": "Medindo…"
+  },
+  "unavailable": {
+    "message": "Abra um vídeo do YouTube e recarregue as abas já abertas."
+  },
+  "errorGpu": {
+    "message": "O processamento de fundo por GPU não está disponível neste navegador."
+  },
+  "errorInit": {
+    "message": "Falha ao iniciar a GPU: $DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "errorLink": {
+    "message": "Falha no programa da GPU: $DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "errorBuffer": {
+    "message": "Não foi possível criar o buffer da GPU."
+  },
+  "errorLost": {
+    "message": "Conexão com a GPU perdida. Desative e ative a extensão."
+  },
+  "errorSize": {
+    "message": "A resolução excede o limite da GPU."
+  },
+  "errorFullscreen": {
+    "message": "Use o botão de tela cheia do YouTube para exibir o fundo."
+  },
+  "errorSecurity": {
+    "message": "A segurança do navegador impede o processamento deste vídeo."
+  },
+  "privacyTitle": {
+    "message": "Política de privacidade"
+  },
+  "privacyIntro": {
+    "message": "Os quadros são processados localmente para expandir o fundo. Quadros e configurações não são vendidos, compartilhados ou enviados ao desenvolvedor, terceiros ou serviços de IA. Não há servidores externos ou código remoto."
+  },
+  "privacyDataTitle": {
+    "message": "Dados e finalidade"
+  },
+  "privacyData": {
+    "message": "Quadros, resolução, reprodução, posição e tamanho são usados temporariamente para renderizar. Os quadros ficam na memória, como texturas da GPU, sem arquivos de vídeo. Ativação, desfoque, brilho e qualidade são salvos no armazenamento local do perfil Chrome."
+  },
+  "privacyAccessTitle": {
+    "message": "Acesso"
+  },
+  "privacyAccess": {
+    "message": "Funciona apenas em www.youtube.com e m.youtube.com. O painel solicita o estado da aba atual. Não salva nem transmite listas de URLs ou histórico. Não solicita nome, e-mail, senha, cookies, pagamentos, localização ou mensagens privadas. Não há rastreamento publicitário ou análise. O YouTube segue suas próprias políticas para reprodução e dados."
+  },
+  "privacyRetentionTitle": {
+    "message": "Retenção e exclusão"
+  },
+  "privacyRetention": {
+    "message": "Quadros e estado são usados apenas durante a execução. Desativar ou trocar o vídeo libera recursos. As configurações ficam locais até serem alteradas ou a extensão removida, sem sincronização com a conta Chrome."
+  },
+  "privacyChoiceTitle": {
+    "message": "Suas escolhas"
+  },
+  "privacyChoice": {
+    "message": "Desativar interrompe o envio de quadros à GPU. Pausar ou ocultar a aba interrompe atualizações. Você pode desativar ou remover a extensão no Chrome. Dados são usados apenas para fundo e ajustes, conforme o Uso limitado da Chrome Web Store. Este aviso será atualizado se o tratamento mudar. Contate quem forneceu a extensão para dúvidas."
+  },
+  "privacyDate": {
+    "message": "Vigente: 12 de outubro de 2026"
+  }
+}

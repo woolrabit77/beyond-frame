@@ -1,0 +1,137 @@
+{
+  "appName": {
+    "message": "Beyond Frame"
+  },
+  "appDescription": {
+    "message": "Extiende los bordes de YouTube por tu pantalla. GPU local, hasta 30fps de fondo."
+  },
+  "title": {
+    "message": "Beyond Frame"
+  },
+  "subtitle": {
+    "message": "Color y movimiento en toda la pantalla."
+  },
+  "enabled": {
+    "message": "Extender fondo"
+  },
+  "blur": {
+    "message": "Desenfoque exterior"
+  },
+  "brightness": {
+    "message": "Brillo exterior"
+  },
+  "quality": {
+    "message": "Calidad"
+  },
+  "low": {
+    "message": "Ligera · 960px"
+  },
+  "balanced": {
+    "message": "Equilibrada · 1280px"
+  },
+  "high": {
+    "message": "Nítida · 1600px"
+  },
+  "playbackNote": {
+    "message": "El vídeo original no cambia. El fondo se actualiza hasta 30fps."
+  },
+  "frameNote": {
+    "message": "Los fotogramas se procesan en tu dispositivo y nunca se envían fuera."
+  },
+  "privacyLink": {
+    "message": "Privacidad"
+  },
+  "checking": {
+    "message": "Comprobando el vídeo…"
+  },
+  "disabled": {
+    "message": "La extensión del fondo está desactivada."
+  },
+  "waiting": {
+    "message": "Esperando un vídeo de YouTube."
+  },
+  "paused": {
+    "message": "En pausa · El fondo también."
+  },
+  "playing": {
+    "message": "Fondo GPU · $DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "measuring": {
+    "message": "Midiendo…"
+  },
+  "unavailable": {
+    "message": "Abre un vídeo de YouTube y recarga las pestañas que ya estaban abiertas."
+  },
+  "errorGpu": {
+    "message": "Este navegador no admite el procesamiento GPU del fondo."
+  },
+  "errorInit": {
+    "message": "Error al iniciar la GPU: $DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "errorLink": {
+    "message": "Error del programa GPU: $DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "errorBuffer": {
+    "message": "No se pudo crear el búfer GPU."
+  },
+  "errorLost": {
+    "message": "Se perdió la conexión GPU. Desactiva y activa la extensión."
+  },
+  "errorSize": {
+    "message": "La resolución supera el límite de la GPU."
+  },
+  "errorFullscreen": {
+    "message": "Usa el botón de pantalla completa de YouTube para mostrar el fondo."
+  },
+  "errorSecurity": {
+    "message": "La seguridad del navegador impide procesar este vídeo."
+  },
+  "privacyTitle": {
+    "message": "Política de privacidad"
+  },
+  "privacyIntro": {
+    "message": "Los fotogramas se procesan localmente para extender el fondo. No se venden, comparten ni envían fotogramas o ajustes al desarrollador, terceros o servicios de IA. No se usan servidores ni código remoto."
+  },
+  "privacyDataTitle": {
+    "message": "Datos y finalidad"
+  },
+  "privacyData": {
+    "message": "Los fotogramas, resolución, reproducción, posición y tamaño se usan temporalmente para renderizar. Los fotogramas permanecen en memoria, como texturas GPU, y no se guardan como archivos de vídeo. Activación, desenfoque, brillo y calidad se guardan en el almacenamiento local del perfil de Chrome."
+  },
+  "privacyAccessTitle": {
+    "message": "Acceso"
+  },
+  "privacyAccess": {
+    "message": "Solo funciona en www.youtube.com y m.youtube.com. La ventana consulta el estado en la pestaña actual. No guarda ni transmite listas de URL o historial. No solicita nombres, correo, contraseñas, cookies, pagos, ubicación o mensajes privados. No incluye seguimiento publicitario ni analítica. YouTube aplica sus propias políticas a su reproducción y datos."
+  },
+  "privacyRetentionTitle": {
+    "message": "Conservación y eliminación"
+  },
+  "privacyRetention": {
+    "message": "Los fotogramas y estados solo se usan durante la ejecución. Al desactivar el fondo o cambiar el vídeo se liberan recursos. Los ajustes permanecen localmente hasta modificarlos o eliminar la extensión; no se sincronizan con la cuenta de Chrome."
+  },
+  "privacyChoiceTitle": {
+    "message": "Tus opciones"
+  },
+  "privacyChoice": {
+    "message": "Desactivar detiene la carga de fotogramas. Pausar u ocultar la pestaña detiene las actualizaciones. Puedes desactivar o eliminar la extensión en Chrome. Los datos solo se usan para el fondo y los ajustes, conforme al Uso limitado de Chrome Web Store. Esta política se actualizará si cambia el tratamiento. Contacta con quien te proporcionó la extensión si tienes dudas."
+  },
+  "privacyDate": {
+    "message": "Vigente: 12 de octubre de 2026"
+  }
+}

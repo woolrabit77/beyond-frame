@@ -1,0 +1,137 @@
+{
+  "appName": {
+    "message": "Beyond Frame"
+  },
+  "appDescription": {
+    "message": "YouTube動画の端を画面全体に拡張。端末内のGPU処理で背景を最大30fpsで更新。"
+  },
+  "title": {
+    "message": "Beyond Frame"
+  },
+  "subtitle": {
+    "message": "色と動きを画面いっぱいに。"
+  },
+  "enabled": {
+    "message": "背景を拡張"
+  },
+  "blur": {
+    "message": "外側のぼかし"
+  },
+  "brightness": {
+    "message": "外側の明るさ"
+  },
+  "quality": {
+    "message": "処理品質"
+  },
+  "low": {
+    "message": "軽量 · 960px"
+  },
+  "balanced": {
+    "message": "バランス · 1280px"
+  },
+  "high": {
+    "message": "鮮明 · 1600px"
+  },
+  "playbackNote": {
+    "message": "元の動画はそのまま再生。背景のみ最大30fpsで更新します。"
+  },
+  "frameNote": {
+    "message": "映像フレームは端末内で処理し、外部には送信しません。"
+  },
+  "privacyLink": {
+    "message": "プライバシー"
+  },
+  "checking": {
+    "message": "動画の状態を確認中…"
+  },
+  "disabled": {
+    "message": "背景の拡張はオフです。"
+  },
+  "waiting": {
+    "message": "YouTube動画を待っています。"
+  },
+  "paused": {
+    "message": "一時停止 · 背景も停止中。"
+  },
+  "playing": {
+    "message": "GPU背景処理中 · $DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "measuring": {
+    "message": "測定中"
+  },
+  "unavailable": {
+    "message": "YouTube動画を開いてください。既に開いているタブは再読み込みしてください。"
+  },
+  "errorGpu": {
+    "message": "このブラウザではGPU背景処理を利用できません。"
+  },
+  "errorInit": {
+    "message": "GPU初期化エラー: $DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "errorLink": {
+    "message": "GPU接続エラー: $DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "errorBuffer": {
+    "message": "GPU背景バッファを作成できません。"
+  },
+  "errorLost": {
+    "message": "GPU接続が切れました。機能をオフにして再度オンにしてください。"
+  },
+  "errorSize": {
+    "message": "動画の解像度がGPUの上限を超えています。"
+  },
+  "errorFullscreen": {
+    "message": "背景を表示するにはYouTubeの全画面ボタンを使ってください。"
+  },
+  "errorSecurity": {
+    "message": "ブラウザのセキュリティ制限により、この動画は処理できません。"
+  },
+  "privacyTitle": {
+    "message": "プライバシーポリシー"
+  },
+  "privacyIntro": {
+    "message": "動画フレームを端末内で処理して背景を拡張します。フレームや設定を開発者、第三者、AIサービスに販売・共有・送信しません。外部サーバーやリモートコードは使用しません。"
+  },
+  "privacyDataTitle": {
+    "message": "データと目的"
+  },
+  "privacyData": {
+    "message": "フレーム、解像度、再生状態、動画の位置とサイズを一時的に描画に使用します。フレームはGPUなどの実行中メモリ内にあり、動画ファイルとして保存しません。オン・オフ、ぼかし、明るさ、品質は現在のChromeプロファイルのローカルストレージに保存します。"
+  },
+  "privacyAccessTitle": {
+    "message": "アクセス範囲"
+  },
+  "privacyAccess": {
+    "message": "www.youtube.comとm.youtube.comでのみ動作し、設定画面は現在のタブに背景状態を問い合わせます。URL一覧や視聴履歴を保存・送信しません。氏名、メール、パスワード、Cookie、支払い、位置情報、私信を要求せず、広告追跡や分析を行いません。YouTube自体の処理にはYouTubeの規約が適用されます。"
+  },
+  "privacyRetentionTitle": {
+    "message": "保存と削除"
+  },
+  "privacyRetention": {
+    "message": "フレームと再生状態は実行中のみ使用します。背景をオフにするか動画が変わると描画リソースを解放します。設定は変更または拡張機能の削除まで端末に残り、Chromeアカウントには同期しません。"
+  },
+  "privacyChoiceTitle": {
+    "message": "ユーザーの選択"
+  },
+  "privacyChoice": {
+    "message": "設定画面でオフにするとフレームの転送を停止します。一時停止中や非表示タブでは更新しません。Chromeで無効化・削除できます。データは背景表示と設定保持にのみ使用し、Chromeウェブストアの限定使用要件に従います。処理が変わる場合は本案内を更新します。お問い合わせは提供者へお願いします。"
+  },
+  "privacyDate": {
+    "message": "施行日: 2026年10月12日"
+  }
+}

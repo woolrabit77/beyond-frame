@@ -1,0 +1,137 @@
+{
+  "appName": {
+    "message": "Beyond Frame"
+  },
+  "appDescription": {
+    "message": "Mở rộng viền video YouTube ra toàn màn hình. GPU cục bộ, nền tối đa 30fps."
+  },
+  "title": {
+    "message": "Beyond Frame"
+  },
+  "subtitle": {
+    "message": "Sắc màu và chuyển động khắp màn hình."
+  },
+  "enabled": {
+    "message": "Mở rộng nền"
+  },
+  "blur": {
+    "message": "Độ mờ bên ngoài"
+  },
+  "brightness": {
+    "message": "Độ sáng bên ngoài"
+  },
+  "quality": {
+    "message": "Chất lượng"
+  },
+  "low": {
+    "message": "Nhẹ · 960px"
+  },
+  "balanced": {
+    "message": "Cân bằng · 1280px"
+  },
+  "high": {
+    "message": "Sắc nét · 1600px"
+  },
+  "playbackNote": {
+    "message": "Video gốc giữ nguyên. Nền cập nhật tối đa 30fps."
+  },
+  "frameNote": {
+    "message": "Khung hình được xử lý trên thiết bị, không gửi ra ngoài."
+  },
+  "privacyLink": {
+    "message": "Quyền riêng tư"
+  },
+  "checking": {
+    "message": "Đang kiểm tra video…"
+  },
+  "disabled": {
+    "message": "Đã tắt mở rộng nền."
+  },
+  "waiting": {
+    "message": "Đang chờ video YouTube."
+  },
+  "paused": {
+    "message": "Tạm dừng · Nền cũng dừng."
+  },
+  "playing": {
+    "message": "Nền GPU · $DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "measuring": {
+    "message": "Đang đo…"
+  },
+  "unavailable": {
+    "message": "Mở video YouTube. Tải lại các thẻ đã mở trước đó."
+  },
+  "errorGpu": {
+    "message": "Trình duyệt này không hỗ trợ xử lý nền bằng GPU."
+  },
+  "errorInit": {
+    "message": "Không thể khởi tạo GPU: $DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "errorLink": {
+    "message": "Lỗi chương trình GPU: $DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "errorBuffer": {
+    "message": "Không thể tạo bộ đệm nền GPU."
+  },
+  "errorLost": {
+    "message": "Mất kết nối GPU. Hãy tắt rồi bật lại tiện ích."
+  },
+  "errorSize": {
+    "message": "Độ phân giải vượt giới hạn GPU."
+  },
+  "errorFullscreen": {
+    "message": "Dùng nút toàn màn hình của YouTube để hiển thị nền."
+  },
+  "errorSecurity": {
+    "message": "Bảo mật trình duyệt ngăn xử lý video này."
+  },
+  "privacyTitle": {
+    "message": "Chính sách quyền riêng tư"
+  },
+  "privacyIntro": {
+    "message": "Khung hình được xử lý cục bộ để mở rộng nền. Không bán, chia sẻ hay gửi khung hình hoặc cài đặt cho nhà phát triển, bên thứ ba hay dịch vụ AI. Không dùng máy chủ ngoài hoặc mã từ xa."
+  },
+  "privacyDataTitle": {
+    "message": "Dữ liệu và mục đích"
+  },
+  "privacyData": {
+    "message": "Khung hình, độ phân giải, trạng thái phát, vị trí và kích thước chỉ được dùng tạm thời để kết xuất. Khung hình ở trong bộ nhớ như kết cấu GPU, không lưu thành tệp video. Bật/tắt, độ mờ, độ sáng và chất lượng lưu trong bộ nhớ cục bộ của hồ sơ Chrome."
+  },
+  "privacyAccessTitle": {
+    "message": "Phạm vi truy cập"
+  },
+  "privacyAccess": {
+    "message": "Chỉ chạy trên www.youtube.com và m.youtube.com. Cửa sổ hỏi trạng thái từ thẻ hiện tại. Không lưu hoặc gửi danh sách URL hay lịch sử xem. Không yêu cầu tên, email, mật khẩu, cookie, thanh toán, vị trí hoặc tin nhắn riêng. Không theo dõi quảng cáo hay phân tích. YouTube xử lý dữ liệu theo chính sách riêng."
+  },
+  "privacyRetentionTitle": {
+    "message": "Lưu giữ và xóa"
+  },
+  "privacyRetention": {
+    "message": "Khung hình và trạng thái chỉ được dùng khi chạy. Tắt nền hoặc đổi video sẽ giải phóng tài nguyên. Cài đặt ở lại cục bộ đến khi thay đổi hoặc gỡ tiện ích, không đồng bộ tài khoản Chrome."
+  },
+  "privacyChoiceTitle": {
+    "message": "Lựa chọn của bạn"
+  },
+  "privacyChoice": {
+    "message": "Tắt chức năng sẽ ngừng tải khung hình lên GPU. Tạm dừng hoặc ẩn thẻ sẽ ngừng cập nhật. Có thể vô hiệu hóa hoặc gỡ tiện ích trong Chrome. Dữ liệu chỉ dùng cho nền và cài đặt, theo yêu cầu Sử dụng hạn chế của Chrome Web Store. Thông báo sẽ cập nhật khi cách xử lý đổi. Hãy liên hệ người cung cấp tiện ích nếu có câu hỏi."
+  },
+  "privacyDate": {
+    "message": "Hiệu lực: 12 tháng 10 năm 2026"
+  }
+}

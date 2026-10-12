@@ -1,0 +1,137 @@
+{
+  "appName": {
+    "message": "Beyond Frame"
+  },
+  "appDescription": {
+    "message": "Extend YouTube video edges across your screen. Local GPU processing, up to 30 background fps."
+  },
+  "title": {
+    "message": "Beyond Frame"
+  },
+  "subtitle": {
+    "message": "Let color and motion fill your screen."
+  },
+  "enabled": {
+    "message": "Extend background"
+  },
+  "blur": {
+    "message": "Outer blur"
+  },
+  "brightness": {
+    "message": "Outer brightness"
+  },
+  "quality": {
+    "message": "Quality"
+  },
+  "low": {
+    "message": "Light · 960px"
+  },
+  "balanced": {
+    "message": "Balanced · 1280px"
+  },
+  "high": {
+    "message": "Sharp · 1600px"
+  },
+  "playbackNote": {
+    "message": "Original video plays unchanged. Background updates at up to 30 fps."
+  },
+  "frameNote": {
+    "message": "Video frames stay on your device and are never sent elsewhere."
+  },
+  "privacyLink": {
+    "message": "Privacy"
+  },
+  "checking": {
+    "message": "Checking video status…"
+  },
+  "disabled": {
+    "message": "Background extension is off."
+  },
+  "waiting": {
+    "message": "Waiting for a YouTube video."
+  },
+  "paused": {
+    "message": "Paused · Background is paused too."
+  },
+  "playing": {
+    "message": "GPU background · $DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "measuring": {
+    "message": "Measuring…"
+  },
+  "unavailable": {
+    "message": "Open a YouTube video. Reload any tab that was already open."
+  },
+  "errorGpu": {
+    "message": "GPU background processing is unavailable in this browser."
+  },
+  "errorInit": {
+    "message": "GPU initialization failed: $DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "errorLink": {
+    "message": "GPU program failed: $DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "errorBuffer": {
+    "message": "Could not create the GPU background buffer."
+  },
+  "errorLost": {
+    "message": "GPU connection lost. Turn the extension off and on again."
+  },
+  "errorSize": {
+    "message": "This video resolution exceeds the GPU limit."
+  },
+  "errorFullscreen": {
+    "message": "Use YouTube’s fullscreen button to display the background."
+  },
+  "errorSecurity": {
+    "message": "Browser security prevents background processing for this video."
+  },
+  "privacyTitle": {
+    "message": "Privacy policy"
+  },
+  "privacyIntro": {
+    "message": "Beyond Frame processes video frames locally to extend the background. It never sells, shares or sends frames or settings to the developer, third parties or AI services. No remote code or servers are used."
+  },
+  "privacyDataTitle": {
+    "message": "Data and purpose"
+  },
+  "privacyData": {
+    "message": "Video frames, resolution, playback state and video position and size are used temporarily for rendering. Frames remain in runtime memory such as GPU textures and are not saved as video files. Enable, blur, brightness and quality settings are stored in the current Chrome profile’s local storage."
+  },
+  "privacyAccessTitle": {
+    "message": "Access"
+  },
+  "privacyAccess": {
+    "message": "Runs only on www.youtube.com and m.youtube.com. The popup requests background status from the current tab. No URL lists or viewing history are stored or transmitted. No names, email, passwords, cookies, payment details, location or private messages are requested. There are no advertising trackers or analytics. YouTube’s own playback and data handling follow its own policies."
+  },
+  "privacyRetentionTitle": {
+    "message": "Retention and deletion"
+  },
+  "privacyRetention": {
+    "message": "Frames and playback state are used only while running. Disabling the background or replacing the video releases renderer resources. Settings stay locally until changed or the extension is removed; Chrome account sync storage is not used."
+  },
+  "privacyChoiceTitle": {
+    "message": "Your choices"
+  },
+  "privacyChoice": {
+    "message": "Disable the background in the popup to stop frame uploads. Repeated updates stop when playback is paused or the tab is hidden. You can disable or remove the extension in Chrome. Data is used only for background display and settings, in accordance with Chrome Web Store Limited Use requirements. This notice will be updated if processing changes. For questions, contact the person who provided this extension."
+  },
+  "privacyDate": {
+    "message": "Effective: October 12, 2026"
+  }
+}

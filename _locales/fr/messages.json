@@ -1,0 +1,137 @@
+{
+  "appName": {
+    "message": "Beyond Frame"
+  },
+  "appDescription": {
+    "message": "Étendez les bords de YouTube à tout l’écran. GPU local, fond jusqu’à 30fps."
+  },
+  "title": {
+    "message": "Beyond Frame"
+  },
+  "subtitle": {
+    "message": "Couleurs et mouvement en plein écran."
+  },
+  "enabled": {
+    "message": "Étendre le fond"
+  },
+  "blur": {
+    "message": "Flou extérieur"
+  },
+  "brightness": {
+    "message": "Luminosité extérieure"
+  },
+  "quality": {
+    "message": "Qualité"
+  },
+  "low": {
+    "message": "Légère · 960px"
+  },
+  "balanced": {
+    "message": "Équilibrée · 1280px"
+  },
+  "high": {
+    "message": "Nette · 1600px"
+  },
+  "playbackNote": {
+    "message": "La vidéo reste intacte. Le fond est actualisé jusqu’à 30fps."
+  },
+  "frameNote": {
+    "message": "Les images sont traitées sur votre appareil, sans envoi externe."
+  },
+  "privacyLink": {
+    "message": "Confidentialité"
+  },
+  "checking": {
+    "message": "Vérification de la vidéo…"
+  },
+  "disabled": {
+    "message": "L’extension du fond est désactivée."
+  },
+  "waiting": {
+    "message": "En attente d’une vidéo YouTube."
+  },
+  "paused": {
+    "message": "En pause · Le fond aussi."
+  },
+  "playing": {
+    "message": "Fond GPU · $DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "measuring": {
+    "message": "Mesure…"
+  },
+  "unavailable": {
+    "message": "Ouvrez une vidéo YouTube et rechargez les onglets déjà ouverts."
+  },
+  "errorGpu": {
+    "message": "Le traitement GPU du fond est indisponible dans ce navigateur."
+  },
+  "errorInit": {
+    "message": "Échec d’initialisation GPU : $DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "errorLink": {
+    "message": "Échec du programme GPU : $DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "errorBuffer": {
+    "message": "Impossible de créer le tampon GPU."
+  },
+  "errorLost": {
+    "message": "Connexion GPU perdue. Désactivez puis réactivez l’extension."
+  },
+  "errorSize": {
+    "message": "La résolution dépasse la limite du GPU."
+  },
+  "errorFullscreen": {
+    "message": "Utilisez le bouton plein écran de YouTube pour afficher le fond."
+  },
+  "errorSecurity": {
+    "message": "La sécurité du navigateur empêche le traitement de cette vidéo."
+  },
+  "privacyTitle": {
+    "message": "Politique de confidentialité"
+  },
+  "privacyIntro": {
+    "message": "Les images vidéo sont traitées localement pour étendre le fond. Aucune image ni aucun réglage n’est vendu, partagé ou envoyé au développeur, à des tiers ou à des services d’IA. Aucun serveur ni code distant n’est utilisé."
+  },
+  "privacyDataTitle": {
+    "message": "Données et finalité"
+  },
+  "privacyData": {
+    "message": "Images, résolution, lecture, position et taille sont utilisées temporairement pour le rendu. Les images restent en mémoire, notamment dans le GPU, sans fichier vidéo. Activation, flou, luminosité et qualité sont enregistrés localement dans le profil Chrome."
+  },
+  "privacyAccessTitle": {
+    "message": "Accès"
+  },
+  "privacyAccess": {
+    "message": "Fonctionne uniquement sur www.youtube.com et m.youtube.com. Le panneau demande l’état à l’onglet actif. Aucune liste d’URL ni historique n’est enregistré ou transmis. Aucun nom, e-mail, mot de passe, cookie, paiement, position ou message privé n’est demandé. Aucun suivi publicitaire ni analyse. YouTube applique ses propres politiques à ses données et à la lecture."
+  },
+  "privacyRetentionTitle": {
+    "message": "Conservation et suppression"
+  },
+  "privacyRetention": {
+    "message": "Images et état ne servent que pendant l’exécution. Désactiver le fond ou changer de vidéo libère les ressources. Les réglages restent locaux jusqu’à modification ou désinstallation, sans synchronisation du compte Chrome."
+  },
+  "privacyChoiceTitle": {
+    "message": "Vos choix"
+  },
+  "privacyChoice": {
+    "message": "Désactiver arrête le chargement des images. La pause ou un onglet masqué arrête les mises à jour. Vous pouvez désactiver ou supprimer l’extension dans Chrome. Les données servent uniquement au fond et aux réglages, conformément à l’utilisation limitée du Chrome Web Store. Cette notice sera mise à jour si le traitement change. Contactez la personne qui vous a fourni l’extension pour toute question."
+  },
+  "privacyDate": {
+    "message": "En vigueur : 12 octobre 2026"
+  }
+}

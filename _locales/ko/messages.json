@@ -1,0 +1,137 @@
+{
+  "appName": {
+    "message": "Beyond Frame"
+  },
+  "appDescription": {
+    "message": "유튜브 영상의 가장자리를 화면 전체로 부드럽게 확장합니다. GPU 처리 · 배경 최대 30fps · 로컬 실행"
+  },
+  "title": {
+    "message": "Beyond Frame"
+  },
+  "subtitle": {
+    "message": "영상의 색과 움직임을 화면 가득."
+  },
+  "enabled": {
+    "message": "배경 확장"
+  },
+  "blur": {
+    "message": "바깥쪽 흐림"
+  },
+  "brightness": {
+    "message": "바깥쪽 밝기"
+  },
+  "quality": {
+    "message": "처리 품질"
+  },
+  "low": {
+    "message": "가볍게 · 960px"
+  },
+  "balanced": {
+    "message": "균형 있게 · 1280px"
+  },
+  "high": {
+    "message": "선명하게 · 1600px"
+  },
+  "playbackNote": {
+    "message": "원본 영상은 그대로 재생됩니다. 배경만 최대 30fps로 갱신합니다."
+  },
+  "frameNote": {
+    "message": "영상 프레임은 기기 안에서만 처리하며 외부로 전송하지 않습니다."
+  },
+  "privacyLink": {
+    "message": "개인정보 안내"
+  },
+  "checking": {
+    "message": "영상 상태를 확인하고 있습니다."
+  },
+  "disabled": {
+    "message": "배경 확장이 꺼져 있습니다."
+  },
+  "waiting": {
+    "message": "재생할 유튜브 영상을 기다립니다."
+  },
+  "paused": {
+    "message": "일시정지 · 배경도 멈춰 있습니다."
+  },
+  "playing": {
+    "message": "GPU 배경 처리 중 · $DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "measuring": {
+    "message": "측정 중"
+  },
+  "unavailable": {
+    "message": "유튜브 영상에서 사용할 수 있습니다. 이미 열려 있던 탭은 새로고침해 주세요."
+  },
+  "errorGpu": {
+    "message": "이 브라우저에서 GPU 배경 처리를 시작할 수 없습니다."
+  },
+  "errorInit": {
+    "message": "GPU 초기화 오류: $DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "errorLink": {
+    "message": "GPU 연결 오류: $DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "errorBuffer": {
+    "message": "GPU 배경 버퍼를 만들 수 없습니다."
+  },
+  "errorLost": {
+    "message": "GPU 연결이 중단되었습니다. 기능을 껐다가 다시 켜 주세요."
+  },
+  "errorSize": {
+    "message": "현재 영상 해상도가 이 GPU의 처리 범위를 넘습니다."
+  },
+  "errorFullscreen": {
+    "message": "배경을 표시하려면 유튜브 전체화면 버튼을 사용해 주세요."
+  },
+  "errorSecurity": {
+    "message": "이 영상은 브라우저 보안 제한으로 배경 처리에 사용할 수 없습니다."
+  },
+  "privacyTitle": {
+    "message": "개인정보처리방침"
+  },
+  "privacyIntro": {
+    "message": "Beyond Frame는 영상 프레임을 기기 안에서 처리해 배경을 확장합니다. 영상이나 설정을 개발자·제3자·AI 서비스에 판매·공유·전송하지 않으며 원격 코드나 외부 서버를 사용하지 않습니다."
+  },
+  "privacyDataTitle": {
+    "message": "처리하는 정보와 목적"
+  },
+  "privacyData": {
+    "message": "영상 프레임, 해상도, 재생 상태, 영상 위치와 크기를 렌더링에 일시적으로 사용합니다. 프레임은 GPU 텍스처 등 실행 중 메모리에만 있으며 영상 파일로 저장하지 않습니다. 켜기·끄기, 흐림, 밝기, 품질 설정은 현재 크롬 프로필의 로컬 저장소에 저장합니다."
+  },
+  "privacyAccessTitle": {
+    "message": "접근 범위"
+  },
+  "privacyAccess": {
+    "message": "www.youtube.com과 m.youtube.com에서만 실행됩니다. 설정창은 현재 탭에 배경 상태를 요청합니다. URL 목록이나 시청 기록을 저장·전송하지 않습니다. 이름·이메일·비밀번호·쿠키·결제 정보·위치·개인 메시지를 요청하지 않으며 광고 추적이나 분석 도구가 없습니다. 유튜브 자체의 영상 재생과 데이터 처리는 유튜브 정책을 따릅니다."
+  },
+  "privacyRetentionTitle": {
+    "message": "보관과 삭제"
+  },
+  "privacyRetention": {
+    "message": "프레임과 재생 상태는 실행 중에만 사용합니다. 배경을 끄거나 영상이 교체되면 렌더러 자원을 해제합니다. 설정은 변경하거나 확장프로그램을 제거할 때까지 로컬에 남으며 크롬 계정 동기화 저장소를 사용하지 않습니다."
+  },
+  "privacyChoiceTitle": {
+    "message": "사용자 선택"
+  },
+  "privacyChoice": {
+    "message": "설정창에서 끄면 프레임 업로드가 중단됩니다. 일시정지나 숨겨진 탭에서는 반복 갱신을 멈춥니다. 크롬에서 기능을 중지하거나 제거할 수 있습니다. 데이터는 배경 표시와 설정 유지에만 사용하며 Chrome 웹 스토어의 제한적 이용 요건을 따릅니다. 처리 방식이 바뀌면 이 안내를 갱신합니다. 문의는 확장프로그램을 제공한 사람에게 해 주세요."
+  },
+  "privacyDate": {
+    "message": "시행일: 2026년 10월 12일"
+  }
+}

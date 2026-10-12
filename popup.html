@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title data-i18n="appName">Beyond Frame</title><link rel="stylesheet" href="popup.css"></head>
+<body>
+<header><span class="badge">LOCAL · GPU</span><h1 data-i18n="title">Beyond Frame</h1><p data-i18n="subtitle">영상의 색과 움직임을 화면 가득.</p></header>
+<main>
+  <label class="switch surface"><span data-i18n="enabled">배경 확장</span><input id="enabled" type="checkbox" role="switch"></label>
+  <div class="sliders surface">
+    <div class="slider-row"><div class="slider-caption"><label for="blur" data-i18n="blur">바깥쪽 흐림</label><output id="blur-value" for="blur"></output></div><input id="blur" type="range" min="0" max="100"></div>
+    <div class="slider-row"><div class="slider-caption"><label for="brightness" data-i18n="brightness">바깥쪽 밝기</label><output id="brightness-value" for="brightness"></output></div><input id="brightness" type="range" min="20" max="100"></div>
+  </div>
+  <div class="quality-row surface"><label for="quality" data-i18n="quality">처리 품질</label><div class="select-wrap"><select id="quality"><option value="low" data-i18n="low">가볍게 · 960px</option><option value="balanced" data-i18n="balanced">균형 있게 · 1280px</option><option value="high" data-i18n="high">선명하게 · 1600px</option></select><svg aria-hidden="true" viewBox="0 0 16 16"><path d="m4 6 4 4 4-4"/></svg></div></div>
+  <div class="notes"><p data-i18n="playbackNote"></p><p><span data-i18n="frameNote"></span> <a href="privacy.html" target="_blank" rel="noopener" data-i18n="privacyLink">개인정보 안내</a></p></div>
+</main>
+<footer><span class="status-dot" aria-hidden="true"></span><p id="status" role="status" data-i18n="checking">영상 상태를 확인하고 있습니다.</p></footer>
+<script src="core.js"></script><script src="i18n.js"></script><script src="popup.js"></script></body></html>

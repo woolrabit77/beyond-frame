@@ -1,0 +1,31 @@
+<!doctype html><html><meta charset="utf-8"><title>Edge alignment regression</title><style>body{margin:0;background:#222;color:white;font:14px system-ui}canvas{display:block}pre{position:relative}</style><button id="run">Run edge tests</button><pre id="results">Ready</pre><div id="preview"></div>
+<script src="../core.js"></script><script src="../i18n.js"></script><script src="../renderer.js"></script><script>
+const checks=[];
+document.querySelector('#run').onclick=()=>{
+ checks.length=0;
+ const source=document.createElement('canvas');source.width=400;source.height=200;source.videoWidth=400;source.videoHeight=200;
+ const ctx=source.getContext('2d'),data=ctx.createImageData(400,200);
+ for(let y=0;y<200;y++)for(let x=0;x<400;x++){const i=(y*400+x)*4;data.data.set([Math.round(x/399*255),Math.round(y/199*255),80,255],i)}ctx.putImageData(data,0,0);
+ for(const quality of ['low','balanced','high']){
+ const canvas=document.createElement('canvas'),r=new YTBackgroundExpand.Renderer(canvas),rect={x:600.25,y:100.5,width:800,height:400},view={width:2000,height:650};
+ r.render(source,rect,view,{quality,blur:0,brightness:100});
+ const gl=r.gl,pixel=(x,y)=>{const p=new Uint8Array(4);gl.readPixels(Math.floor(x/view.width*canvas.width),canvas.height-1-Math.floor(y/view.height*canvas.height),1,1,gl.RGBA,gl.UNSIGNED_BYTE,p);return [...p]};
+ const test=(name,pass,detail)=>checks.push({quality,name,pass,detail});
+ const nearLeft=pixel(rect.x-80,300),nearRight=pixel(rect.x+rect.width+80,300),farLeft=pixel(100,300),stripLeft=pixel(rect.x-180,300),farRight=pixel(1900,300),stripRight=pixel(rect.x+rect.width+180,300);
+ test('left reflects without compression',Math.abs(nearLeft[0]-26)<=2,nearLeft);
+ test('right reflects without compression',Math.abs(nearRight[0]-229)<=2,nearRight);
+ test('left beyond strip holds final color',Math.abs(farLeft[0]-stripLeft[0])<=2,{farLeft,stripLeft});
+ test('right beyond strip holds final color',Math.abs(farRight[0]-stripRight[0])<=2,{farRight,stripRight});
+ test('fractional boundary keeps one CSS pixel of underlap',canvas.style.clipPath.includes('601.25px')&&canvas.style.clipPath.includes('1399.25px'),canvas.style.clipPath);
+ test('CSS mask supported',CSS.supports('clip-path',canvas.style.clipPath));
+ test('left upscaling guard is opaque',pixel(rect.x+0.5,300)[3]===255,pixel(rect.x+0.5,300));
+ test('right upscaling guard is opaque',pixel(rect.x+rect.width-0.5,300)[3]===255,pixel(rect.x+rect.width-0.5,300));
+ test('top orientation is aligned',Math.abs(pixel(900,rect.y-40)[1]-26)<=3,pixel(900,rect.y-40));
+ test('bottom orientation is aligned',Math.abs(pixel(900,rect.y+rect.height+40)[1]-229)<=3,pixel(900,rect.y+rect.height+40));
+ test('hole remains transparent',pixel(900,300)[3]===0,pixel(900,300));
+ test('GPU clean',gl.getError()===gl.NO_ERROR);
+ r.dispose();
+ }
+ document.querySelector('#results').textContent=JSON.stringify({passed:checks.filter(c=>c.pass).length,total:checks.length,checks},null,2);
+};
+</script></html>

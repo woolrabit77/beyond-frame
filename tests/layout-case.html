@@ -1,0 +1,36 @@
+<!doctype html><html><meta charset="utf-8"><title>Layout case</title><link rel="stylesheet" href="../content.css"><style>body{margin:0;min-height:150vh;background:#15202a}ytd-app{display:block;background:#15202a;min-height:150vh}#movie_player{position:absolute;left:8.25%;top:66.5px;width:72.5%;height:64vh}video{display:block;width:100%;height:100%;object-fit:contain}#source{display:none}</style><ytd-app><div id="movie_player"><video muted playsinline></video></div></ytd-app><canvas id="source" width="800" height="450"></canvas><script>
+const query=new URLSearchParams(location.search),gutter=Number(query.get('gutter')),zoom=Number(query.get('zoom'));
+document.documentElement.style.cssText=`overflow-y:${gutter?'scroll':'hidden'};zoom:${zoom};direction:${query.get('direction')||'ltr'}`;
+const scrollbar=document.createElement('style');scrollbar.textContent=`::-webkit-scrollbar{width:${gutter}px;background:#555}`;document.head.append(scrollbar);
+if(query.has('round')){const corners=document.createElement('style');corners.textContent='body{background:white}#movie_player{border-radius:18px;overflow:hidden;height:auto;aspect-ratio:16/9}video{height:auto;border-radius:18px}';document.head.append(corners)}
+let storageChanged;let settings={enabled:true,blur:0,brightness:100,quality:'balanced'};
+window.chrome={storage:{local:{get:async()=>({settings})},onChanged:{addListener(fn){storageChanged=fn}}},runtime:{onMessage:{addListener(){}}}};
+window.testErrors=[];addEventListener('error',e=>testErrors.push(e.message));
+</script><script src="../core.js"></script><script src="../i18n.js"></script><script src="../renderer.js"></script><script>
+const RealRenderer=YTBackgroundExpand.Renderer;let sent=false,renderCount=0;
+YTBackgroundExpand.Renderer=class extends RealRenderer{
+ render(video,rect,viewport,...args){
+  super.render(video,rect,viewport,...args);
+  renderCount++;
+  const bounds=this.canvas.getBoundingClientRect(),box=video.getBoundingClientRect();
+  const expected=YTBackgroundExpand.fitRect({x:box.left,y:box.top,width:box.width,height:box.height},video.videoWidth,video.videoHeight,getComputedStyle(video).objectFit);
+  const actual={x:bounds.left+rect.x/viewport.width*bounds.width,y:bounds.top+rect.y/viewport.height*bounds.height,width:rect.width/viewport.width*bounds.width,height:rect.height/viewport.height*bounds.height};
+  const shaderError=Math.max(...['x','y','width','height'].map(k=>Math.abs(expected[k]-actual[k])));
+  const cssWidth=parseFloat(getComputedStyle(this.canvas).width),cssHeight=parseFloat(getComputedStyle(this.canvas).height);
+  const maskError=Math.max(Math.abs(bounds.left+rect.x/cssWidth*bounds.width-expected.x),Math.abs(bounds.top+rect.y/cssHeight*bounds.height-expected.y));
+  const cornerFilled=!query.has('round')||(getComputedStyle(video).borderTopLeftRadius==='0px'&&getComputedStyle(document.querySelector('#movie_player')).borderTopLeftRadius==='0px');
+  const result={id:Number(query.get('id')),pass:shaderError<.02&&maskError<.02&&cornerFilled,renderCount,fullscreen:!!document.fullscreenElement,cornerFilled,innerWidth,layerWidth:bounds.width,zoom,gutter,shaderError,maskError,expected,actual,errors:testErrors};
+  document.documentElement.dataset.result=JSON.stringify(result);if(!sent){sent=true;parent.postMessage(result,location.origin)}
+ }
+};
+const source=document.querySelector('#source'),ctx=source.getContext('2d');
+ctx.fillStyle='#26768b';ctx.fillRect(0,0,800,450);ctx.fillStyle='#aa8038';ctx.fillRect(400,0,180,450);ctx.strokeStyle='#e3f5ff';ctx.lineWidth=7;ctx.beginPath();ctx.moveTo(0,80);ctx.lineTo(800,300);ctx.stroke();
+const video=document.querySelector('video');video.srcObject=source.captureStream(30);video.play();
+if(query.has('tools')){
+ const tools=document.createElement('div');tools.style.cssText='position:absolute;bottom:0;left:0;z-index:20';document.querySelector('#movie_player').append(tools);
+ const add=(label,action)=>{const button=document.createElement('button');button.textContent=label;button.onclick=action;tools.append(button)};
+ add('Pause and resize layer',()=>{video.pause();document.querySelector('.yt-background-expand-layer').style.setProperty('width','calc(100% - 23px)','important')});
+ add('Toggle background',()=>{settings={...settings,enabled:!settings.enabled};storageChanged({settings:{newValue:settings}},'local')});
+ add('Fullscreen',()=>document.fullscreenElement?document.exitFullscreen():document.querySelector('#movie_player').requestFullscreen());
+}
+</script><script src="../content.js"></script></html>

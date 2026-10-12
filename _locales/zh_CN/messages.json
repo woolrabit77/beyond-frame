@@ -1,0 +1,137 @@
+{
+  "appName": {
+    "message": "Beyond Frame"
+  },
+  "appDescription": {
+    "message": "将YouTube视频边缘扩展到整个屏幕。本地GPU处理，背景最高30fps。"
+  },
+  "title": {
+    "message": "Beyond Frame"
+  },
+  "subtitle": {
+    "message": "让色彩与动态铺满屏幕。"
+  },
+  "enabled": {
+    "message": "扩展背景"
+  },
+  "blur": {
+    "message": "外侧模糊"
+  },
+  "brightness": {
+    "message": "外侧亮度"
+  },
+  "quality": {
+    "message": "画质"
+  },
+  "low": {
+    "message": "轻量 · 960px"
+  },
+  "balanced": {
+    "message": "均衡 · 1280px"
+  },
+  "high": {
+    "message": "清晰 · 1600px"
+  },
+  "playbackNote": {
+    "message": "原视频保持正常播放，仅背景以最高30fps更新。"
+  },
+  "frameNote": {
+    "message": "视频帧仅在设备上处理，不会发送到外部。"
+  },
+  "privacyLink": {
+    "message": "隐私说明"
+  },
+  "checking": {
+    "message": "正在检查视频状态…"
+  },
+  "disabled": {
+    "message": "背景扩展已关闭。"
+  },
+  "waiting": {
+    "message": "正在等待YouTube视频。"
+  },
+  "paused": {
+    "message": "已暂停 · 背景也已暂停。"
+  },
+  "playing": {
+    "message": "GPU背景处理中 · $DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "measuring": {
+    "message": "测量中"
+  },
+  "unavailable": {
+    "message": "请打开YouTube视频，并刷新已打开的标签页。"
+  },
+  "errorGpu": {
+    "message": "此浏览器无法启动GPU背景处理。"
+  },
+  "errorInit": {
+    "message": "GPU初始化失败：$DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "errorLink": {
+    "message": "GPU程序失败：$DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "errorBuffer": {
+    "message": "无法创建GPU背景缓冲区。"
+  },
+  "errorLost": {
+    "message": "GPU连接中断，请关闭后重新开启此功能。"
+  },
+  "errorSize": {
+    "message": "视频分辨率超出了GPU限制。"
+  },
+  "errorFullscreen": {
+    "message": "请使用YouTube的全屏按钮显示背景。"
+  },
+  "errorSecurity": {
+    "message": "浏览器安全限制阻止了此视频的背景处理。"
+  },
+  "privacyTitle": {
+    "message": "隐私政策"
+  },
+  "privacyIntro": {
+    "message": "本扩展在设备上处理视频帧以扩展背景，不会向开发者、第三方或AI服务出售、共享或传输帧及设置。不使用外部服务器或远程代码。"
+  },
+  "privacyDataTitle": {
+    "message": "数据与用途"
+  },
+  "privacyData": {
+    "message": "临时使用帧、分辨率、播放状态、视频位置和大小进行渲染。帧保留在GPU等运行内存中，不保存为视频文件。开关、模糊、亮度和画质保存在当前Chrome配置文件的本地存储中。"
+  },
+  "privacyAccessTitle": {
+    "message": "访问范围"
+  },
+  "privacyAccess": {
+    "message": "仅在www.youtube.com和m.youtube.com运行。弹窗从当前标签页请求背景状态，不保存或传输网址列表及观看历史，不请求姓名、邮箱、密码、Cookie、付款信息、位置或私信，不含广告跟踪和分析工具。YouTube自身的数据处理遵循其政策。"
+  },
+  "privacyRetentionTitle": {
+    "message": "保留与删除"
+  },
+  "privacyRetention": {
+    "message": "帧和播放状态仅在运行时使用。关闭背景或更换视频会释放渲染资源。设置在更改或卸载扩展前保留在本地，不通过Chrome账号同步。"
+  },
+  "privacyChoiceTitle": {
+    "message": "您的选择"
+  },
+  "privacyChoice": {
+    "message": "在弹窗中关闭功能即可停止帧上传；暂停或隐藏标签页会停止重复更新。可在Chrome中禁用或移除扩展。数据仅用于背景显示和设置，遵守Chrome应用商店的有限使用要求。处理方式变化时会更新此说明。问题请联系扩展提供者。"
+  },
+  "privacyDate": {
+    "message": "生效日期：2026年10月12日"
+  }
+}

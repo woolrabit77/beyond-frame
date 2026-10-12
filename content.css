@@ -1,0 +1,65 @@
+.yt-background-expand-layer {
+  position: fixed !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  pointer-events: none !important;
+  z-index: 0 !important;
+  display: block !important;
+  contain: strict;
+}
+.yt-background-expand-layer[hidden] { display: none !important; }
+html.yt-background-expand-on ytd-app {
+  background: transparent !important;
+  position: relative;
+  z-index: 1;
+}
+html.yt-background-expand-on ytd-watch-flexy,
+html.yt-background-expand-on ytd-page-manager,
+html.yt-background-expand-on ytm-app {
+  background: transparent !important;
+}
+html.yt-background-expand-on ytm-app { position: relative; z-index: 1; }
+html.yt-background-expand-on #cinematics { display: none !important; }
+html.yt-background-expand-on #movie_player,
+html.yt-background-expand-on #movie_player .html5-video-container,
+html.yt-background-expand-on #movie_player video { background: transparent !important; }
+/* YouTube's page chrome must not cover the generated viewport background. */
+html.yt-background-expand-on ytd-masthead,
+html.yt-background-expand-on ytd-masthead #background,
+html.yt-background-expand-on #masthead-container,
+html.yt-background-expand-on ytm-mobile-topbar-renderer {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+html.yt-background-expand-on ytd-searchbox #container,
+html.yt-background-expand-on yt-searchbox .ytSearchboxComponentInputBox,
+html.yt-background-expand-on yt-searchbox .ytSearchboxComponentSearchForm {
+  background: rgba(255, 255, 255, .65) !important;
+  backdrop-filter: blur(16px);
+}
+html[dark].yt-background-expand-on ytd-searchbox #container,
+html[dark].yt-background-expand-on yt-searchbox .ytSearchboxComponentInputBox,
+html[dark].yt-background-expand-on yt-searchbox .ytSearchboxComponentSearchForm {
+  background: rgba(15, 15, 15, .65) !important;
+}
+/* Device/theme decoration is not part of the video source. */
+html.yt-background-expand-on #player-container-outer,
+html.yt-background-expand-on #player-container-inner,
+html.yt-background-expand-on #player-container,
+html.yt-background-expand-on ytd-player,
+html.yt-background-expand-on #movie_player,
+html.yt-background-expand-on #movie_player .html5-video-container,
+html.yt-background-expand-on #movie_player video {
+  background: transparent !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+html.yt-background-expand-on #movie_player:not(:focus-visible),
+html.yt-background-expand-on #movie_player video:not(:focus-visible) { outline-color: transparent !important; }
+.yt-background-expand-layer.yt-background-expand-fullscreen {
+  position: absolute !important;
+  /* The edge underlap must remain behind the original video and controls. */
+  z-index: -1 !important;
+}

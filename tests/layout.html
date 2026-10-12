@@ -1,0 +1,21 @@
+<!doctype html><html><meta charset="utf-8"><title>Viewport alignment regression</title><style>body{margin:0;font:14px system-ui;background:#20252d;color:white}button{margin:8px;padding:8px}iframe{display:block;border:0}pre{white-space:pre-wrap;margin:8px}</style><button id="run">Run layout tests</button><pre id="results">Ready</pre><iframe id="case" width="800" height="600"></iframe><script>
+const cases=[
+ {width:800,height:600,gutter:0,zoom:1},
+ {width:1280,height:720,gutter:17,zoom:1},
+ {width:1865,height:868,gutter:15,zoom:1},
+ {width:1024,height:768,gutter:20,zoom:1.25},
+ {width:900,height:600,gutter:17,zoom:.8},
+ {width:1280,height:720,gutter:15,zoom:1.5},
+ {width:800,height:600,gutter:17,zoom:1,direction:'rtl'},
+ {width:1280,height:720,gutter:17,zoom:1,round:1}
+];
+document.querySelector('#run').onclick=async()=>{
+ const results=[];const frame=document.querySelector('iframe');
+ for(const [id,entry] of cases.entries()){
+  frame.width=entry.width;frame.height=entry.height;
+  const result=new Promise(resolve=>{const receive=e=>{if(e.source===frame.contentWindow&&e.data.id===id){removeEventListener('message',receive);resolve(e.data)}};addEventListener('message',receive)});
+  frame.src='layout-case.html?'+new URLSearchParams({...entry,id});
+  results.push(await result);document.querySelector('#results').textContent=JSON.stringify({passed:results.filter(r=>r.pass).length,total:cases.length,results},null,2);
+ }
+};
+</script></html>

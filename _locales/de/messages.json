@@ -1,0 +1,137 @@
+{
+  "appName": {
+    "message": "Beyond Frame"
+  },
+  "appDescription": {
+    "message": "YouTube-Videoränder bildschirmfüllend erweitern. Lokale GPU, Hintergrund bis 30fps."
+  },
+  "title": {
+    "message": "Beyond Frame"
+  },
+  "subtitle": {
+    "message": "Farbe und Bewegung auf dem ganzen Bildschirm."
+  },
+  "enabled": {
+    "message": "Hintergrund erweitern"
+  },
+  "blur": {
+    "message": "Unschärfe außen"
+  },
+  "brightness": {
+    "message": "Helligkeit außen"
+  },
+  "quality": {
+    "message": "Qualität"
+  },
+  "low": {
+    "message": "Leicht · 960px"
+  },
+  "balanced": {
+    "message": "Ausgewogen · 1280px"
+  },
+  "high": {
+    "message": "Scharf · 1600px"
+  },
+  "playbackNote": {
+    "message": "Das Originalvideo bleibt unverändert. Der Hintergrund läuft mit bis zu 30fps."
+  },
+  "frameNote": {
+    "message": "Videobilder werden nur auf deinem Gerät verarbeitet und nicht übertragen."
+  },
+  "privacyLink": {
+    "message": "Datenschutz"
+  },
+  "checking": {
+    "message": "Videostatus wird geprüft…"
+  },
+  "disabled": {
+    "message": "Die Hintergrunderweiterung ist aus."
+  },
+  "waiting": {
+    "message": "Warten auf ein YouTube-Video."
+  },
+  "paused": {
+    "message": "Pausiert · Auch der Hintergrund."
+  },
+  "playing": {
+    "message": "GPU-Hintergrund · $DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "measuring": {
+    "message": "Messung…"
+  },
+  "unavailable": {
+    "message": "Öffne ein YouTube-Video und lade bereits offene Tabs neu."
+  },
+  "errorGpu": {
+    "message": "GPU-Hintergrundverarbeitung ist hier nicht verfügbar."
+  },
+  "errorInit": {
+    "message": "GPU-Initialisierung fehlgeschlagen: $DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "errorLink": {
+    "message": "GPU-Programm fehlgeschlagen: $DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "errorBuffer": {
+    "message": "GPU-Puffer konnte nicht erstellt werden."
+  },
+  "errorLost": {
+    "message": "GPU-Verbindung verloren. Schalte die Erweiterung aus und wieder ein."
+  },
+  "errorSize": {
+    "message": "Die Videoauflösung überschreitet die GPU-Grenze."
+  },
+  "errorFullscreen": {
+    "message": "Verwende YouTubes Vollbildtaste für den Hintergrund."
+  },
+  "errorSecurity": {
+    "message": "Die Browsersicherheit verhindert die Verarbeitung dieses Videos."
+  },
+  "privacyTitle": {
+    "message": "Datenschutzerklärung"
+  },
+  "privacyIntro": {
+    "message": "Videobilder werden lokal zur Hintergrunderweiterung verarbeitet. Bilder und Einstellungen werden weder verkauft noch an Entwickler, Dritte oder KI-Dienste weitergegeben. Es gibt keine externen Server oder entfernten Code."
+  },
+  "privacyDataTitle": {
+    "message": "Daten und Zweck"
+  },
+  "privacyData": {
+    "message": "Bilder, Auflösung, Wiedergabe, Position und Größe dienen vorübergehend der Darstellung. Bilder bleiben im Arbeitsspeicher, etwa als GPU-Texturen, und werden nicht als Video gespeichert. Ein/Aus, Unschärfe, Helligkeit und Qualität werden lokal im Chrome-Profil gespeichert."
+  },
+  "privacyAccessTitle": {
+    "message": "Zugriff"
+  },
+  "privacyAccess": {
+    "message": "Läuft nur auf www.youtube.com und m.youtube.com. Das Popup fragt den Status des aktuellen Tabs ab. URL-Listen und Verlauf werden nicht gespeichert oder übertragen. Namen, E-Mail, Passwörter, Cookies, Zahlungen, Standort und private Nachrichten werden nicht angefordert. Keine Werbeverfolgung oder Analyse. Für YouTubes eigene Verarbeitung gelten dessen Richtlinien."
+  },
+  "privacyRetentionTitle": {
+    "message": "Speicherung und Löschung"
+  },
+  "privacyRetention": {
+    "message": "Bilder und Status werden nur während der Ausführung genutzt. Ausschalten oder Videowechsel gibt Ressourcen frei. Einstellungen bleiben bis zur Änderung oder Deinstallation lokal und werden nicht mit dem Chrome-Konto synchronisiert."
+  },
+  "privacyChoiceTitle": {
+    "message": "Deine Wahl"
+  },
+  "privacyChoice": {
+    "message": "Ausschalten stoppt Bild-Uploads. Pausieren oder Verbergen des Tabs stoppt Aktualisierungen. Du kannst die Erweiterung in Chrome deaktivieren oder entfernen. Daten dienen nur dem Hintergrund und Einstellungen gemäß den Limited-Use-Vorgaben des Chrome Web Store. Änderungen der Verarbeitung führen zu einer aktualisierten Erklärung. Fragen bitte an den Anbieter der Erweiterung."
+  },
+  "privacyDate": {
+    "message": "Gültig ab: 12. Oktober 2026"
+  }
+}
